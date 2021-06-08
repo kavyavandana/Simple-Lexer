@@ -26,12 +26,8 @@ keywords_key = keywords.keys()
 dataFlag = False
 
 a=file.read()
-
 count = 0
-
 program = a.split("\n")
-
-
 
 for line in program:
 	count = count + 1

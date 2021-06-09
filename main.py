@@ -19,8 +19,8 @@ punctuation_symbol = {':' : 'colon', ';' : 'semi-colon', '.' : 'dot', ',' : 'com
 punctuation_symbol_key = punctuation_symbol.keys()
 
 
-indentifier = {'a' : 'id', 'b' : 'id', 'c' : 'id', 'd' : 'id'}
-indentifier_key = indentifier.keys()
+identifier = {'a' : 'id', 'b' : 'id', 'c' : 'id', 'd' : 'id'}
+identifier_key = identifier.keys()
 
 
 keywords = {'while': 'keyword', 'fahr' : 'keyword', 'upper' : 'keyword'}
@@ -44,13 +44,13 @@ for line in program:
 	print("Line#", count, "properties \n")
 	for token in tokens:
 		if token in operators_key:
-			print(token, "operator is ", operators[token])
+			print(token, " is ", operators[token])
 		if token in data_type_key:
-			print(token, "datatype is", data_type[token])
+			print(token, " is ", data_type[token])
 		if token in punctuation_symbol_key:
-			print(token, "Punctuation symbol is", punctuation_symbol[token])
-		if token in indentifier_key:
-			print(token, " is Identifier")
+			print(token, " is ", punctuation_symbol[token])
+		if token in identifier_key:
+			print(token, " is ", identifier[token])
 		if token in keywords_key:
 			print(token, " is ", keywords[token])
 		if token in separators_key:
